@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rex Tech - Skill Acquisition Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <h1>Welcome to Rex Tech</h1>
+    <p>Unlock your potential with expert-led courses in Web Development, Coding & Affiliate Marketing.</p>
+    <a href="#courses" class="btn-primary">Browse Courses</a>
+  </header>
+
+  <!-- COURSE FILTER -->
+  <section id="course-filter">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="web">Web Development</button>
+    <button class="filter-btn" data-filter="coding">Coding</button>
+    <button class="filter-btn" data-filter="affiliate">Affiliate Marketing</button>
+  </section>
+
+  <!-- COURSES -->
+  <section id="courses">
+    <h2>Our Courses</h2>
+    <div id="course-list" class="course-grid"></div>
+  </section>
+
+  <!-- TEACHERS SHOWCASE -->
+  <section id="teachers">
+    <h2>Meet Our Teachers</h2>
+    <div id="teacher-list" class="teacher-grid"></div>
+  </section>
+
+  <!-- STUDENT TESTIMONIALS -->
+  <section id="testimonials">
+    <h2>What Our Students Say</h2>
+    <div id="testimonial-slider" class="testimonial-slider"></div>
+    <div id="testimonial-video">
+      <h3>Student Testimonial Video</h3>
+      <video controls width="480" src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
+    </div>
+  </section>
+
+  <!-- BADGES & ACHIEVEMENTS -->
+  <section id="achievements">
+    <h2>Earn Badges & Achievements</h2>
+    <div class="badges">
+      <div class="badge">🔥 Completion Master</div>
+      <div class="badge">🏆 Top Performer</div>
+      <div class="badge">🚀 Fast Learner</div>
+    </div>
+  </section>
+
+  <!-- PAYMENT & ENROLLMENT -->
+  <section id="enroll">
+    <h2>Enroll & Payment</h2>
+    <p>Course Price: <strong>₦10,000 per month</strong></p>
+    <p>Payment Method: Bank Transfer</p>
+    <p>Bank Details: <strong>9026100010 | Opay Rex Ndubuisi</strong></p>
+    <p>After payment, please upload your receipt proof to enroll.</p>
+    <input type="file" id="payment-receipt" accept="image/*,application/pdf" />
+    <button id="submit-payment">Submit Payment & Enroll</button>
+  </section>
+
+  <!-- PERSONALIZED PROFILE (hidden, for future use) -->
+  <section id="profile" class="hidden">
+    <h2>Your Profile</h2>
+    <p>Name: Demo Student</p>
+    <p>Enrolled Courses:</p>
+    <ul id="profile-enrollments"></ul>
+  </section>
+
+  <!-- LIVE CHAT WIDGET -->
+  <div id="live-chat-btn">Chat</div>
+  <div id="live-chat-window" class="hidden">
+    <div id="chat-header">
+      <span>Live Chat Support</span>
+      <button id="chat-close-btn">X</button>
+    </div>
+    <div id="chat-messages"></div>
+    <input type="text" id="chat-input" placeholder="Type your message..." />
+    <button id="chat-send-btn">Send</button>
+  </div>
+
+  <!-- ADMIN DASHBOARD -->
+  <section id="admin-dashboard" class="hidden">
+    <h2>Admin Dashboard</h2>
+    <button id="close-admin-dashboard">Close Admin Dashboard</button>
+    <h3>Registered Students & Enrollments</h3>
+    <div id="admin-students-list"></div>
+  </section>
+
+  <!-- Admin Dashboard Toggle Button -->
+  <button id="open-admin-dashboard" title="Open Admin Dashboard" aria-label="Open Admin Dashboard" style="position: fixed; top: 10px; right: 10px; z-index:1000;">Admin Dashboard</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
